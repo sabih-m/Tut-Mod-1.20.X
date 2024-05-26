@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tut-mod",
+	"version": "${version}",
+	"name": "Tut Mod",
+	"description": "This is my first mod! by sabih :)",
+	"authors": [
+		"sabih!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tut-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.sabih.tutmod.TutMod"
+		],
+		"client": [
+			"net.sabih.tutmod.TutModClient"
+		],
+		"fabric-datagen": [
+			"net.sabih.tutmod.TutModDataGenerator"
+		]
+	},
+	"mixins": [
+		"tut-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
