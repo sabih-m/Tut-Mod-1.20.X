@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "tut-mod:item/raw_ruby"
+  }
+}

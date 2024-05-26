@@ -2,6 +2,8 @@ package net.sabih.tutmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.sabih.tutmod.item.ModItemGroups;
+import net.sabih.tutmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +14,7 @@ public class TutMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItemsToInv();
+		ModItemGroups.registerItemGroups();
 	}
 }
